@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<!-- Main content -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <h1 class="text-primary-custom">Bienvenido a mi blog</h1>
+            <p>Este es un espacio donde comparto mis pensamientos y experiencias.</p>
+            <a href="{{ url_for('new_post') }}" class="btn btn-custom">Nuevo Post</a>
+        </div>
+        
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Sobre Mí</h5>
+                    <p class="card-text">Soy un entusiasta de la tecnología y me encanta escribir sobre diferentes
+                        temas.</p>
+                    <a href="#" class="btn btn-custom">Leer más</a>
+                </div>
+            </div>
+        </div>
+
+        {% for post in posts %}
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ post.title }}</h5>
+                        <p class="card-text">{{ post.content }}</p>
+                        <a href="{{ url_for('show_post', post_id=loop.index0) }}" class="btn btn-custom">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

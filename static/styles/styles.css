@@ -1,0 +1,64 @@
+/* Custom Styles */
+
+/* Navbar background color */
+.bg-custom {
+    background-color: #272932; /* Raisin black */
+}
+
+/* Navbar link color */
+.nav-link {
+    color: #E7ECEF; /* Anti-flash white */
+}
+
+.nav-link:hover {
+    color: #F05D5E; /* Bittersweet */
+}
+
+/* Custom button color */
+.btn-custom {
+    background-color: #0F7173; /* Caribbean Current */
+    color: #E7ECEF; /* Anti-flash white */
+    border-color: #0F7173; /* Caribbean Current */
+}
+
+.btn-custom:hover {
+    background-color: #F05D5E; /* Bittersweet */
+    border-color: #F05D5E; /* Bittersweet */
+    color: #fff; /* White */
+}
+
+/* Primary text color */
+.text-primary-custom {
+    color: #D8A47F; /* Buff */
+}
+
+/* Main content background */
+body {
+    background-color: #E7ECEF; /* Anti-flash white */
+    color: #272932; /* Raisin black */
+}
+
+/* Navbar background color */
+.bg-custom {
+    background-color: #272932; /* Raisin black */
+}
+
+/* Navbar brand color */
+.navbar-brand {
+    color: #E7ECEF !important; /* Anti-flash white */
+}
+
+/* Navbar link color */
+.nav-link {
+    color: #E7ECEF !important; /* Anti-flash white */
+}
+
+.nav-link:hover {
+    color: #F05D5E !important; /* Bittersweet */
+}
+
+/* Change the color of the hamburger icon */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28 231, 236, 239, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
